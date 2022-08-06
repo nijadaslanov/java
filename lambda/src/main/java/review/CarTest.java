@@ -26,6 +26,18 @@ public class CarTest {
         List<Car> durableCarList = filterCars(carList, new CarDurablePredicate());
         System.out.println(durableCarList);
 
+        String name = "Severus";
+        //new car with lambda
+        CarPredicate newCarLambda = (Car car) -> car.getYear()>2015;
+        List<Car> newCarListLambda = filterCars(carList, newCarLambda);
+        System.out.println(newCarListLambda);
+
+        //fast car with lambda
+        //if you have only one variable, you can remove variable type and ()
+        List<Car> fastCarListLambda = filterCars(carList, car -> car.getTopSpeed() > 160);
+        System.out.println(fastCarListLambda);
+
+
     }
 
     private static List<Car> filterCars(List<Car> carList, CarPredicate carPredicate) {
