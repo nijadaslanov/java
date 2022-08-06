@@ -1,3 +1,5 @@
+
+
 public class AppleGreenColorPredicate  implements ApplePredicate{
 
     @Override
