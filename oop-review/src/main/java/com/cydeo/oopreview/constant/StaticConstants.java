@@ -18,7 +18,7 @@ public class StaticConstants {
 
     public static final List<Pos> POS_LIST = new ArrayList<>();
 
-    public static List<Integer> AVAILABLE_INSTALLMENT = Arrays.asList(1,2,3,4,5,6,7);
+    public static List<Integer> AVAILABLE_INSTALLMENT = Arrays.asList(1, 2, 3, 4, 5, 6, 7);
 
     public static List<Character> BANK_CODE = Arrays.asList('A', 'B', 'C');
 
